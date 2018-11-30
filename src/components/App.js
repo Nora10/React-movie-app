@@ -9,6 +9,7 @@ class App extends Component {
     this.state = {
       movies: [
         {
+          id: 1,
           title: "Ferris Bueller's Day Off",
           year: "1986",
           description:
@@ -17,6 +18,7 @@ class App extends Component {
             "https://m.media-amazon.com/images/M/MV5BYTk3MDljOWQtNGI2My00OTEzLTlhYjQtOTQ4ODM2MzUwY2IwXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_SX300.jpg"
         },
         {
+          id: 2,
           title: "Bridget Jones' Diary",
           year: "2001",
           description:
@@ -25,6 +27,7 @@ class App extends Component {
             "https://m.media-amazon.com/images/M/MV5BYTk3MDljOWQtNGI2My00OTEzLTlhYjQtOTQ4ODM2MzUwY2IwXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_SX300.jpg"
         },
         {
+          id: 3,
           title: "Bridget Jones' Diary",
           year: "2001",
           description:
@@ -33,6 +36,7 @@ class App extends Component {
             "https://m.media-amazon.com/images/M/MV5BYTk3MDljOWQtNGI2My00OTEzLTlhYjQtOTQ4ODM2MzUwY2IwXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_SX300.jpg"
         },
         {
+          id: 4,
           title: "Bridget Jones' Diary",
           year: "2001",
           description:
@@ -41,6 +45,7 @@ class App extends Component {
             "https://m.media-amazon.com/images/M/MV5BYTk3MDljOWQtNGI2My00OTEzLTlhYjQtOTQ4ODM2MzUwY2IwXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_SX300.jpg"
         },
         {
+          id: 5,
           title: "Bridget Jones' Diary",
           year: "2001",
           description:
@@ -49,6 +54,7 @@ class App extends Component {
             "https://m.media-amazon.com/images/M/MV5BYTk3MDljOWQtNGI2My00OTEzLTlhYjQtOTQ4ODM2MzUwY2IwXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_SX300.jpg"
         },
         {
+          id: 6,
           title: "50 First Dates",
           year: "2004",
           description:
@@ -57,6 +63,7 @@ class App extends Component {
             "https://m.media-amazon.com/images/M/MV5BYTk3MDljOWQtNGI2My00OTEzLTlhYjQtOTQ4ODM2MzUwY2IwXkEyXkFqcGdeQXVyNTIzOTk5ODM@._V1_SX300.jpg"
         },
         {
+          id: 7,
           title: "Matilda",
           year: "1996",
           description:
@@ -78,6 +85,7 @@ class App extends Component {
         <div className="flex">
           {this.state.movies.map(movie => (
             <Movie
+              key={movie.id}
               movieTitle={movie.title}
               movieYear={movie.year}
               moviePoster={movie.poster}
