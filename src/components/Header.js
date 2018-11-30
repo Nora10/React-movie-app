@@ -7,9 +7,10 @@ class Header extends Component {
   render() {
     return (
       <header className="App-header">
-        <p className={this.props.class}>
+        <h2 className={this.props.class}>{this.props.title}</h2>
+        {/* <p className={this.props.class}>
           {this.props.title} = {this.props.count}
-        </p>
+        </p> */}
         {/* <p>{this.props.count}</p> */}
       </header>
     );
