@@ -18,7 +18,11 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.img-spinner {
+  height: "200px";
+  width: "200px";
+  margin: 0 auto;
+}
 .flex {
   display: flex;
   flex-direction: row;
