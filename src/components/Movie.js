@@ -7,8 +7,7 @@ class Movie extends Component {
 
   render() {
     return (
-      <div className="shape">
-        {/* <h2>FAVORITE MOVIES</h2> */}
+      <div className="movieCase">
         <h3>{this.props.movieTitle}</h3>
         <img src={this.props.moviePoster} />
         <p>{this.props.movieYear}</p>

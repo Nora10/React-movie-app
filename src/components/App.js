@@ -4,6 +4,7 @@ import Header from "./Header";
 import Movie from "./Movie";
 import Search from "./Search";
 import spinner from "../ajax-loader.gif";
+import ModalWrapper from "./ModalWrapper";
 
 // const MOVIE_API_URL = "http://www.omdbapi.com/?s=man&apikey=4a3b711b";
 class App extends Component {
@@ -42,6 +43,7 @@ class App extends Component {
       this.SearchMovie();
     });
   };
+
   render() {
     return (
       <div className="App">
@@ -49,6 +51,7 @@ class App extends Component {
     <Header class="small" title="SERVICES" count={4} /> */}
         <Header class="title-class" title="nora's movie app" />
         <h2>CHECK OUT ALL THE 2018 BLOCKBUSTERS THAT MADE HEADLINES!</h2>
+        <ModalWrapper />
         <Search submission={this.submitSearch} />
         <div className="flex">
           {this.state.loading ? (

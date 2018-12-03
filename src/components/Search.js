@@ -1,4 +1,5 @@
 // import React, { Component } from "react"; They are both the same
+// class Movie extends Component { ; Then you do this
 import React from "react";
 
 class Search extends React.Component {
